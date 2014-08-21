@@ -1,6 +1,6 @@
 #!/bin/sh
-RSYNC_OPTS="-avPhzc"
-RSYNC_HOST=linode
+RSYNC_OPTS="-avPhzc --delete-after"
+RSYNC_HOST=root@sys
 RSYNC_FOLDER=/var/www/gifs.shsv.pics
 
 ./script/build_site_index && \
