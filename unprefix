@@ -1,0 +1,7 @@
+require 'fileutils'
+
+Dir["**/*.gif"].each do |f|
+  parent_name = File.basename(File.dirname(f))
+  new_name = f.sub(/^#{parent_name}\/#{parent_name}-/, "#{parent_name}/")
+  FileUtils.mv(f, new_name) unless f == new_name
+end
