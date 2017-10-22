@@ -36,6 +36,7 @@ PLATFORMS
 DEPENDENCIES
   builder
   jekyll
+  kramdown
 
 BUNDLED WITH
-   1.11.2
+   1.12.5
